@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sntvHome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>SNTV</title>
+</head>
+<body>
+    
+    
+
+    <section class="sidebarContainer">
+        <!-- Sidebar -->
+        <aside class="container__sidebar">
+            <div class="transportationTool">
+                <img src="images/bus-icon.png" alt="">
+            </div>
+            <div class="nextTrip-details">
+                <h1 class="nextTrip-Title"> Your Next Trip</h1>
+                <div id="countdown">
+                    <ul>
+                      <li id="hours"></li>
+                      <li id="minutes"></li>
+                      <li id="seconds"></li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <!-- Left vertical line -->
+                    <div class="container__line"></div>
+                    
+                    <!-- The timeline items container -->
+                    <ul class="container__items">
+                        <!-- Each timeline item -->
+                        <li class="container__item">
+                            <!-- The circle and title -->
+                            <div class="container__top">
+                                <!-- The circle -->
+                                <div class="container__circle"></div>
+                
+                                <!-- The title -->
+                                <div class="container__title">
+                                    From
+                                </div>
+                            </div>
+                
+                            <!-- The description -->
+                            <div class="container__desc big">
+                                Constantine
+                            </div>
+                        </li>
+                        <li class="container__item">
+                            <!-- The circle and title -->
+                            <div class="container__top">
+                                <!-- The circle -->
+                                <div class="container__circle"></div>
+                
+                                <!-- The title -->
+                                <div class="container__title">
+                                    To
+                                </div>
+                            </div>
+                
+                            <!-- The description -->
+                            <div class="container__desc big">
+                                Oran
+                            </div>
+                        </li>
+                        <li class="container__item">
+                            <!-- The circle and title -->
+                            <div class="container__top">
+                                <!-- The circle -->
+                                <div class="container__circle"></div>
+                
+                                <!-- The title -->
+                                <div class="container__title">
+                                    Seats
+                                </div>
+                            </div>
+                
+                            <!-- The description -->
+                            <div class="container__desc">
+                                48 
+                            </div>
+                        </li>
+                
+                        <li class="container__item">
+                            <!-- The circle and title -->
+                            <div class="container__top">
+                                <!-- The circle -->
+                                <div class="container__circle"></div>
+                
+                                <!-- The title -->
+                                <div class="container__title">
+                                    Reserved
+                                </div>
+                            </div>
+                
+                            <!-- The description -->
+                            <div class="container__desc">
+                                + 25 
+                            </div>
+                        </li>
+
+                        <li class="container__item">
+                            <!-- The circle and title -->
+                            <div class="container__top">
+                                <!-- The circle -->
+                                <div class="container__circle"></div>
+                
+                                <!-- The title -->
+                                <div class="container__title">
+                                    Available
+                                </div>
+                            </div>
+                
+                            <!-- The description -->
+                            <div class="container__desc">
+                                - 23 
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    
+        <!-- Main -->
+        <main class="container__main">
+            <header class="header">
+                <div class="header-leftSide">
+                    <a href="" class="logo">
+                        <img src="images/SNTV LOGO2.png" alt="">
+                    </a>
+                </div>
+
+                <div class="header-rightSide">
+
+                    <div class="nextTrips">
+                        <div class="tooltip">
+                           <p>Next Trips</p>
+                        </div>
+                    
+                        
+                        
+                        <img src="images/nextTrips.png" alt="">
+                    </div>
+
+                    <div class="myTrips">
+                        <div class="tooltip">
+                           <p>My Trips</p>
+                        </div>
+                    
+                        
+                        <img src="images/myTrips.png" alt="">
+                    </div>
+                    
+                    <div class="notification">
+                        
+                        <div class="tooltip">
+                            <p>Notifications</p> 
+                        </div>
+                        
+                        
+                        <div class="notification-image"><img src="images/notification-icon.png" alt=""></div>
+                        <!-- Docked at the top right corner -->
+                        <div class="container__docker">
+                            9
+                        </div>
+                    
+                        
+                    </div>
+                    <div class="nav-separator"></div>
+                    <div class="avatar">
+                        <!-- Avatar image -->
+                        <img class="avatar__image" src="images/avatar-icon.png" />
+                    </div>
+                    <div class="name">Jacoub</div>
+                    
+                    <div class="nav">
+                        <!-- <div class="tooltip">
+                            <p>Notifications</p> 
+                        </div> -->
+                        <div class="drop-btn">
+                            <span class="fas fa-caret-down"></span>
+                        </div>
+                        
+                        <div class="wrapper">
+                            <ul class="menu-bar">
+                            <li>
+                                <a href="#">
+                                    <div class="icon">
+                                        <span class="fas fa-home"></span>
+                                    </div>
+                                    Home 
+                                </a>
+                            </li>
+                            <li class="setting-item">
+                                <a href="#">
+                                    <div class="icon">
+                                        <span class="fas fa-cog"></span>
+                                    </div>
+                                    Settings & privacy <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li class="help-item">
+                                <a href="#">
+                                    <div class="icon">
+                                        <span class="fas fa-question-circle"></span>
+                                    </div>
+                                    Help & support <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon">
+                                        <span class="fas fa-user"></span>
+                                    </div>
+                                    About us 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon">
+                                        <span class="fas fa-comment-alt"></span>
+                                    </div>
+                                    Feedback 
+                                </a>
+                            </li>
+                            </ul>
+                            <!-- Settings & privacy Menu-items -->
+                            <ul class="setting-drop">
+                            <li class="arrow back-setting-btn"><span class="fas fa-arrow-left"></span>Settings & privacy</li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon">
+                                        <span class="fas fa-user"></span>
+                                    </div>
+                                    Personal info 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon">
+                                        <span class="fas fa-lock"></span>
+                                    </div>
+                                    Password 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon">
+                                        <span class="fas fa-address-book"></span>
+                                    </div>
+                                    Activity log 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon">
+                                        <span class="fas fa-globe-asia"></span>
+                                    </div>
+                                    Languages 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon">
+                                        <span class="fas fa-sign-out-alt"></span>
+                                    </div>
+                                    Log out 
+                                </a>
+                            </li>
+                            </ul>
+                            <!-- Help & support Menu-items -->
+                            <ul class="help-drop">
+                            <li class="arrow back-help-btn"><span class="fas fa-arrow-left"></span>Help & support</li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon">
+                                        <span class="fas fa-question-circle"></span>
+                                    </div>
+                                    Help centre 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon">
+                                        <span class="fas fa-envelope"></span>
+                                    </div>
+                                    Support Inbox 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon">
+                                        <span class="fas fa-comment-alt"></span>
+                                    </div>
+                                    Send feedback 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon">
+                                        <span class="fas fa-exclamation-circle"></span>
+                                    </div>
+                                    Report problem 
+                                </a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+            </header>
+
+            <section class="firstSection">
+                <div class="helloDiv">
+                    <h1 class="helloDiv-title">Welcome Back, <span> Mr. Jacoub</span></h1>
+                    <p class="helloDiv-paragraph">This is what we've got you today.</p>
+                </div>
+                <div class="NewTrip">
+                    <button onclick="AddNewTripButton()" class="NewTripBtn"><span>+</span> Add New Trip</button>
+                </div>
+                
+            </section>
+            <div class="addNewTrip-wrapper">
+                <div class="title">
+                  Add New Trip
+                </div>
+                <div class="form">
+                   <div class="inputfield">
+                      <label>Start Point</label>
+                      <div class="custom_select">
+                        <select name="Wilaya" id="wilaya">
+                            <option value="Adrar">1- Adrar</option>
+                            <option value="Chlef">2- Chlef</option>
+                            <option value="Laghouat">3- Laghouat</option>
+                            <option value="Oum El Bouaghi">4- Oum El Bouaghi</option>
+                            <option value="Batna">5- Batna</option>
+                            <option value="Béjaïa">6- Béjaïa</option>
+                            <option value="Biskra">7- Biskra</option>
+                            <option value="Béchar">8- Béchar</option>
+                            <option value="Blida">9- Blida</option>
+                            <option value="Bouïra">10- Bouïra</option>
+                            <option value="Tamanrasset">11- Tamanrasset</option>
+                            <option value="Tébessa">12- Tébessa</option>
+                            <option value="Tlemcen">13- Tlemcen</option>
+                            <option value="Tiaret">14- Tiaret</option>
+                            <option value="Tizi Ouzou">15- Tizi Ouzou</option>
+                            <option value="Alger">16- Alger</option>
+                            <option value="Djelfa">17- Djelfa</option>
+                            <option value="Jijel">18- Jijel</option>
+                            <option value="Sétif">19- Sétif</option>
+                            <option value="Saïda">20- Saïda</option>
+                            <option value="Skikda">21- Skikda</option>
+                            <option value="Sidi Bel Abbès">22- Sidi Bel Abbès</option>
+                            <option value="Annaba">23- Annaba</option>
+                            <option value="Guelma">24- Guelma</option>
+                            <option value="Constantine">25- Constantine</option>
+                            <option value="Médéa">26- Médéa</option>
+                            <option value="Mostaganem">27- Mostaganem</option>
+                            <option value="M'Sila">28- M'Sila</option>
+                            <option value="Mascara">29- Mascara</option>
+                            <option value="Ouargla">30- Ouargla</option>
+                            <option value="Oran">31- Oran</option>
+                            <option value="El Bayadh">32- El Bayadh</option>
+                            <option value="Illizi">33- Illizi</option>
+                            <option value="Bordj Bou Arréridj">34- Bordj Bou Arréridj</option>
+                            <option value="Boumerdès">35- Boumerdès</option>
+                            <option value="El Tarf">36- El Tarf</option>
+                            <option value="Tindouf">37- Tindouf</option>
+                            <option value="Tissemsilt">38- Tissemsilt</option>
+                            <option value="El Oued">39- El Oued</option>
+                            <option value="Khenchela">40- Khenchela</option>
+                            <option value="Souk Ahras">41- Souk Ahras</option>
+                            <option value="Tipaza">42- Tipaza</option>
+                            <option value="Mila">43- Mila</option>
+                            <option value="Aïn Defla">44- Aïn Defla</option>
+                            <option value="Naâma">45- Naâma</option>
+                            <option value="Aïn Témouchent">46- Aïn Témouchent</option>
+                            <option value="Ghardaïa">47- Ghardaïa</option>
+                            <option value="Relizane">48- Relizane</option>
+                            <option value="El M'ghair">49- El M'ghair</option>
+                            <option value="El Menia">50- El Menia</option>
+                            <option value="Ouled Djellal">51- Ouled Djellal</option>
+                            <option value="Bordj Baji Mokhtar">52- Bordj Baji Mokhtar</option>
+                            <option value="Béni Abbès">53- Béni Abbès</option>
+                            <option value="Timimoun">54- Timimoun</option>
+                            <option value="Touggourt">55- Touggourt</option>
+                            <option value="Djanet">56- Djanet</option>
+                            <option value="In Salah">57- In Salah</option>
+                            <option value="	In Guezzam">58- In Guezzam</option>
+                        </select>
+                      </div>
+                   </div>  
+                    <div class="inputfield">
+                      <label>Destination</label>
+                      <div class="custom_select">
+                        <select name="Wilaya" id="wilaya">
+                            <option value="Adrar">1- Adrar</option>
+                            <option value="Chlef">2- Chlef</option>
+                            <option value="Laghouat">3- Laghouat</option>
+                            <option value="Oum El Bouaghi">4- Oum El Bouaghi</option>
+                            <option value="Batna">5- Batna</option>
+                            <option value="Béjaïa">6- Béjaïa</option>
+                            <option value="Biskra">7- Biskra</option>
+                            <option value="Béchar">8- Béchar</option>
+                            <option value="Blida">9- Blida</option>
+                            <option value="Bouïra">10- Bouïra</option>
+                            <option value="Tamanrasset">11- Tamanrasset</option>
+                            <option value="Tébessa">12- Tébessa</option>
+                            <option value="Tlemcen">13- Tlemcen</option>
+                            <option value="Tiaret">14- Tiaret</option>
+                            <option value="Tizi Ouzou">15- Tizi Ouzou</option>
+                            <option value="Alger">16- Alger</option>
+                            <option value="Djelfa">17- Djelfa</option>
+                            <option value="Jijel">18- Jijel</option>
+                            <option value="Sétif">19- Sétif</option>
+                            <option value="Saïda">20- Saïda</option>
+                            <option value="Skikda">21- Skikda</option>
+                            <option value="Sidi Bel Abbès">22- Sidi Bel Abbès</option>
+                            <option value="Annaba">23- Annaba</option>
+                            <option value="Guelma">24- Guelma</option>
+                            <option value="Constantine">25- Constantine</option>
+                            <option value="Médéa">26- Médéa</option>
+                            <option value="Mostaganem">27- Mostaganem</option>
+                            <option value="M'Sila">28- M'Sila</option>
+                            <option value="Mascara">29- Mascara</option>
+                            <option value="Ouargla">30- Ouargla</option>
+                            <option value="Oran">31- Oran</option>
+                            <option value="El Bayadh">32- El Bayadh</option>
+                            <option value="Illizi">33- Illizi</option>
+                            <option value="Bordj Bou Arréridj">34- Bordj Bou Arréridj</option>
+                            <option value="Boumerdès">35- Boumerdès</option>
+                            <option value="El Tarf">36- El Tarf</option>
+                            <option value="Tindouf">37- Tindouf</option>
+                            <option value="Tissemsilt">38- Tissemsilt</option>
+                            <option value="El Oued">39- El Oued</option>
+                            <option value="Khenchela">40- Khenchela</option>
+                            <option value="Souk Ahras">41- Souk Ahras</option>
+                            <option value="Tipaza">42- Tipaza</option>
+                            <option value="Mila">43- Mila</option>
+                            <option value="Aïn Defla">44- Aïn Defla</option>
+                            <option value="Naâma">45- Naâma</option>
+                            <option value="Aïn Témouchent">46- Aïn Témouchent</option>
+                            <option value="Ghardaïa">47- Ghardaïa</option>
+                            <option value="Relizane">48- Relizane</option>
+                            <option value="El M'ghair">49- El M'ghair</option>
+                            <option value="El Menia">50- El Menia</option>
+                            <option value="Ouled Djellal">51- Ouled Djellal</option>
+                            <option value="Bordj Baji Mokhtar">52- Bordj Baji Mokhtar</option>
+                            <option value="Béni Abbès">53- Béni Abbès</option>
+                            <option value="Timimoun">54- Timimoun</option>
+                            <option value="Touggourt">55- Touggourt</option>
+                            <option value="Djanet">56- Djanet</option>
+                            <option value="In Salah">57- In Salah</option>
+                            <option value="	In Guezzam">58- In Guezzam</option>
+                        </select>
+                      </div>
+                   </div>  
+                   <div class="inputfield">
+                        <label>Date</label>
+        
+                        <div class="date-container">
+        
+                        <div class="selected-date">
+                        </div>
+            
+                        <div class="date-picker">
+                            <img src="images/calendar-icon.png" alt="">
+                        </div>
+            
+                        <div class="dates">
+                            <div class="month">
+                                <div class="arrows prev-mth">&lt;</div>
+                                <div class="mth"></div>
+                                <div class="arrows next-mth">&gt;</div>
+                            </div>
+                            <div class="weekdays">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div class="days"></div>
+                        </div>
+                        
+                        </div>
+                   </div>  
+                  <div class="inputfield">
+                      <label>Time</label>
+                      <div class="time-picker" data-time="00:00">
+                        <div class="hour">
+                            <div class="hr-up"></div>
+                            <input type="number" class="hr" value="00" />
+                            <div class="hr-down"></div>
+                        </div>
+            
+                        <div class="separator">:</div>
+            
+                        <div class="minute">
+                            <div class="min-up"></div>
+                            <input type="number" class="min" value="00">
+                            <div class="min-down"></div>
+                        </div>
+                    </div>
+                   </div> 
+                    <div class="inputfield">
+                      <label>Price</label>
+                      <input type="number" name="test_name" min="0" oninput= "validity.valid||(value='');" class="input">
+                   </div> 
+                    <div class="inputfield">
+                      <label>Number Of Seats</label>
+                      <input type="number" name="test_name" min="0" oninput= "validity.valid||(value='');" class="input">
+                   </div>  
+                  <div class="inputfield">
+                      <label>Add Stations</label>
+                      <textarea class="textarea"></textarea>
+                   </div> 
+                   
+                  
+                  <div class="inputfield">
+                    <input type="submit" value="Add" class="btn">
+                  </div>
+                </div>
+            </div>
+            <section class="cards-section">
+                <h2>Dashboard</h2>
+                <div class="cards-wrapper">
+                    <div class="card">
+                        <div class="newBooking">
+                            <img src="images/newBookings-icon.png" alt="">
+                            <h1 class="cardTitle">New Bookings</h1>
+                        </div>
+                        
+                        <p class="cardParagraph">You have 3 new passengers booked for your next trips. </p>
+                        <a href="" class="seeDetails"> See Details</a>
+                    </div>
+                    <div class="card">
+                        <div class="newBooking">
+                            <img src="images/newBookings-icon.png" alt="">
+                            <h1 class="cardTitle">New Bookings</h1>
+                        </div>
+                        
+                        <p class="cardParagraph">You have 3 new passengers booked for your next trips. </p>
+                        <a href="" class="seeDetails"> See Details</a>
+                    </div>
+                    <div class="card">
+                        <div class="newBooking">
+                            <img src="images/newBookings-icon.png" alt="">
+                            <h1 class="cardTitle">New Bookings</h1>
+                        </div>
+                        
+                        <p class="cardParagraph">You have 3 new passengers booked for your next trips. </p>
+                        <a href="" class="seeDetails"> See Details</a>
+                    </div>
+                    <div class="card">
+                        <div class="newBooking">
+                            <img src="images/newBookings-icon.png" alt="">
+                            <h1 class="cardTitle">New Bookings</h1>
+                        </div>
+                        
+                        <p class="cardParagraph">You have 3 new passengers booked for your next trips. </p>
+                        <a href="" class="seeDetails"> See Details</a>
+                    </div>
+                    <div class="card">
+                        <div class="newBooking">
+                            <img src="images/newBookings-icon.png" alt="">
+                            <h1 class="cardTitle">New Bookings</h1>
+                        </div>
+                        
+                        <p class="cardParagraph">You have 3 new passengers booked for your next trips. </p>
+                        <a href="" class="seeDetails"> See Details</a>
+                    </div>
+                    <div class="card">
+                        <div class="newBooking">
+                            <img src="images/newBookings-icon.png" alt="">
+                            <h1 class="cardTitle">New Bookings</h1>
+                        </div>
+                        
+                        <p class="cardParagraph">You have 3 new passengers booked for your next trips. </p>
+                        <a href="" class="seeDetails"> See Details</a>
+                    </div>
+                    <div class="card">
+                        <div class="newBooking">
+                            <img src="images/newBookings-icon.png" alt="">
+                            <h1 class="cardTitle">New Bookings</h1>
+                        </div>
+                        
+                        <p class="cardParagraph">You have 3 new passengers booked for your next trips. </p>
+                        <a href="" class="seeDetails"> See Details</a>
+                    </div>
+                   
+                </div>
+            </section>
+
+
+            <section class="statistics">
+                <div class="col-div-8">
+                <div class="box-8">
+                <div class="content-box">
+                    <p>Reservations </p>
+                    <br/>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Seat</th>
+                                <th>Name</th>
+                                <th>Contact</th>
+                                <th>Destination</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Thibaut Courtois</td>
+                                <td>0690752126</td>
+                                <td>Oran</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Daniel Carvajal </td>
+                                <td>0736454266</td>
+                                <td>Oran</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Éder Gabriel Militão</td>
+                                <td>0540392143</td>
+                                <td>Oran</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>David Alaba</td>
+                                <td>0544738229</td>
+                                <td>Oran</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Marcelo Vieira da Silva</td>
+                                <td>0698643535</td>
+                                <td>Chlef</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Toni Kroos</td>
+                                <td>0549345525</td>
+                                <td>Oran</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Eden Hazard</td>
+                                <td>0544738229</td>
+                                <td>Oran</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Luka Modric</td>
+                                <td>0789324219</td>
+                                <td>Bordj Bou Arreridj</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Karim Benzema</td>
+                                <td>0544738229</td>
+                                <td>Oran</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Federico Santiago Valverde Dipetta</td>
+                                <td>0654738201</td>
+                                <td>Oran</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Vinicius Paixao de Oliveira Junior</td>
+                                <td>0780024563</td>
+                                <td>Setif</td>
+                            </tr>
+                        </tbody>
+            
+                    </table>
+                </div>
+                </div>
+                </div>
+
+
+                <div class="col-div-4">
+                    <div class="box-4">
+                    <div class="content-box">
+                        <p>Total Reserved Places </p>
+            
+                        <div class="circular-container">
+                            <div class="circular-progress">
+                              <div class="value-container">0%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+              
+            
+        </main>
+
+
+        
+    </section>
+    <footer>
+        <img src="images/SNTV LOGO2.png" alt="">
+        <p>2021 SNTV Company All rights reserved</p>
+    </footer>
+
+    <script src="sntvHome.js"></script>
+</body>
+</html>

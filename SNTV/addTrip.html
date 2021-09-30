@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="addTrip.Css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="addNewTrip-wrapper">
+        <div class="title">
+          Add New Trip
+        </div>
+        <div class="form">
+           <div class="inputfield">
+              <label>Start Point</label>
+              <div class="custom_select">
+                <select name="Wilaya" id="wilaya">
+                    <option value="Adrar">1- Adrar</option>
+                    <option value="Chlef">2- Chlef</option>
+                    <option value="Laghouat">3- Laghouat</option>
+                    <option value="Oum El Bouaghi">4- Oum El Bouaghi</option>
+                    <option value="Batna">5- Batna</option>
+                    <option value="Béjaïa">6- Béjaïa</option>
+                    <option value="Biskra">7- Biskra</option>
+                    <option value="Béchar">8- Béchar</option>
+                    <option value="Blida">9- Blida</option>
+                    <option value="Bouïra">10- Bouïra</option>
+                    <option value="Tamanrasset">11- Tamanrasset</option>
+                    <option value="Tébessa">12- Tébessa</option>
+                    <option value="Tlemcen">13- Tlemcen</option>
+                    <option value="Tiaret">14- Tiaret</option>
+                    <option value="Tizi Ouzou">15- Tizi Ouzou</option>
+                    <option value="Alger">16- Alger</option>
+                    <option value="Djelfa">17- Djelfa</option>
+                    <option value="Jijel">18- Jijel</option>
+                    <option value="Sétif">19- Sétif</option>
+                    <option value="Saïda">20- Saïda</option>
+                    <option value="Skikda">21- Skikda</option>
+                    <option value="Sidi Bel Abbès">22- Sidi Bel Abbès</option>
+                    <option value="Annaba">23- Annaba</option>
+                    <option value="Guelma">24- Guelma</option>
+                    <option value="Constantine">25- Constantine</option>
+                    <option value="Médéa">26- Médéa</option>
+                    <option value="Mostaganem">27- Mostaganem</option>
+                    <option value="M'Sila">28- M'Sila</option>
+                    <option value="Mascara">29- Mascara</option>
+                    <option value="Ouargla">30- Ouargla</option>
+                    <option value="Oran">31- Oran</option>
+                    <option value="El Bayadh">32- El Bayadh</option>
+                    <option value="Illizi">33- Illizi</option>
+                    <option value="Bordj Bou Arréridj">34- Bordj Bou Arréridj</option>
+                    <option value="Boumerdès">35- Boumerdès</option>
+                    <option value="El Tarf">36- El Tarf</option>
+                    <option value="Tindouf">37- Tindouf</option>
+                    <option value="Tissemsilt">38- Tissemsilt</option>
+                    <option value="El Oued">39- El Oued</option>
+                    <option value="Khenchela">40- Khenchela</option>
+                    <option value="Souk Ahras">41- Souk Ahras</option>
+                    <option value="Tipaza">42- Tipaza</option>
+                    <option value="Mila">43- Mila</option>
+                    <option value="Aïn Defla">44- Aïn Defla</option>
+                    <option value="Naâma">45- Naâma</option>
+                    <option value="Aïn Témouchent">46- Aïn Témouchent</option>
+                    <option value="Ghardaïa">47- Ghardaïa</option>
+                    <option value="Relizane">48- Relizane</option>
+                    <option value="El M'ghair">49- El M'ghair</option>
+                    <option value="El Menia">50- El Menia</option>
+                    <option value="Ouled Djellal">51- Ouled Djellal</option>
+                    <option value="Bordj Baji Mokhtar">52- Bordj Baji Mokhtar</option>
+                    <option value="Béni Abbès">53- Béni Abbès</option>
+                    <option value="Timimoun">54- Timimoun</option>
+                    <option value="Touggourt">55- Touggourt</option>
+                    <option value="Djanet">56- Djanet</option>
+                    <option value="In Salah">57- In Salah</option>
+                    <option value="	In Guezzam">58- In Guezzam</option>
+                </select>
+              </div>
+           </div>  
+            <div class="inputfield">
+              <label>Destination</label>
+              <div class="custom_select">
+                <select name="Wilaya" id="wilaya">
+                    <option value="Adrar">1- Adrar</option>
+                    <option value="Chlef">2- Chlef</option>
+                    <option value="Laghouat">3- Laghouat</option>
+                    <option value="Oum El Bouaghi">4- Oum El Bouaghi</option>
+                    <option value="Batna">5- Batna</option>
+                    <option value="Béjaïa">6- Béjaïa</option>
+                    <option value="Biskra">7- Biskra</option>
+                    <option value="Béchar">8- Béchar</option>
+                    <option value="Blida">9- Blida</option>
+                    <option value="Bouïra">10- Bouïra</option>
+                    <option value="Tamanrasset">11- Tamanrasset</option>
+                    <option value="Tébessa">12- Tébessa</option>
+                    <option value="Tlemcen">13- Tlemcen</option>
+                    <option value="Tiaret">14- Tiaret</option>
+                    <option value="Tizi Ouzou">15- Tizi Ouzou</option>
+                    <option value="Alger">16- Alger</option>
+                    <option value="Djelfa">17- Djelfa</option>
+                    <option value="Jijel">18- Jijel</option>
+                    <option value="Sétif">19- Sétif</option>
+                    <option value="Saïda">20- Saïda</option>
+                    <option value="Skikda">21- Skikda</option>
+                    <option value="Sidi Bel Abbès">22- Sidi Bel Abbès</option>
+                    <option value="Annaba">23- Annaba</option>
+                    <option value="Guelma">24- Guelma</option>
+                    <option value="Constantine">25- Constantine</option>
+                    <option value="Médéa">26- Médéa</option>
+                    <option value="Mostaganem">27- Mostaganem</option>
+                    <option value="M'Sila">28- M'Sila</option>
+                    <option value="Mascara">29- Mascara</option>
+                    <option value="Ouargla">30- Ouargla</option>
+                    <option value="Oran">31- Oran</option>
+                    <option value="El Bayadh">32- El Bayadh</option>
+                    <option value="Illizi">33- Illizi</option>
+                    <option value="Bordj Bou Arréridj">34- Bordj Bou Arréridj</option>
+                    <option value="Boumerdès">35- Boumerdès</option>
+                    <option value="El Tarf">36- El Tarf</option>
+                    <option value="Tindouf">37- Tindouf</option>
+                    <option value="Tissemsilt">38- Tissemsilt</option>
+                    <option value="El Oued">39- El Oued</option>
+                    <option value="Khenchela">40- Khenchela</option>
+                    <option value="Souk Ahras">41- Souk Ahras</option>
+                    <option value="Tipaza">42- Tipaza</option>
+                    <option value="Mila">43- Mila</option>
+                    <option value="Aïn Defla">44- Aïn Defla</option>
+                    <option value="Naâma">45- Naâma</option>
+                    <option value="Aïn Témouchent">46- Aïn Témouchent</option>
+                    <option value="Ghardaïa">47- Ghardaïa</option>
+                    <option value="Relizane">48- Relizane</option>
+                    <option value="El M'ghair">49- El M'ghair</option>
+                    <option value="El Menia">50- El Menia</option>
+                    <option value="Ouled Djellal">51- Ouled Djellal</option>
+                    <option value="Bordj Baji Mokhtar">52- Bordj Baji Mokhtar</option>
+                    <option value="Béni Abbès">53- Béni Abbès</option>
+                    <option value="Timimoun">54- Timimoun</option>
+                    <option value="Touggourt">55- Touggourt</option>
+                    <option value="Djanet">56- Djanet</option>
+                    <option value="In Salah">57- In Salah</option>
+                    <option value="	In Guezzam">58- In Guezzam</option>
+                </select>
+              </div>
+           </div>  
+           <div class="inputfield">
+                <label>Date</label>
+
+                <div class="date-container">
+
+                <div class="selected-date">
+                </div>
+    
+                <div class="date-picker">
+                    <img src="images/calendar-icon.png" alt="">
+                </div>
+    
+                <div class="dates">
+                    <div class="month">
+                        <div class="arrows prev-mth">&lt;</div>
+                        <div class="mth"></div>
+                        <div class="arrows next-mth">&gt;</div>
+                    </div>
+                    <div class="weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div class="days"></div>
+                </div>
+                
+                </div>
+           </div>  
+          <div class="inputfield">
+              <label>Time</label>
+              <div class="time-picker" data-time="00:00">
+                <div class="hour">
+                    <div class="hr-up"></div>
+                    <input type="number" class="hr" value="00" />
+                    <div class="hr-down"></div>
+                </div>
+    
+                <div class="separator">:</div>
+    
+                <div class="minute">
+                    <div class="min-up"></div>
+                    <input type="number" class="min" value="00">
+                    <div class="min-down"></div>
+                </div>
+            </div>
+           </div> 
+            <div class="inputfield">
+              <label>Price</label>
+              <input type="number" name="test_name" min="0" oninput= "validity.valid||(value='');" class="input">
+           </div> 
+            <div class="inputfield">
+              <label>Number Of Seats</label>
+              <input type="number" name="test_name" min="0" oninput= "validity.valid||(value='');" class="input">
+           </div>  
+          <div class="inputfield">
+              <label>Add Stations</label>
+              <textarea class="textarea"></textarea>
+           </div> 
+           
+          
+          <div class="inputfield">
+            <input type="submit" value="Add" class="btn">
+          </div>
+        </div>
+    </div>
+    <script src="newTrip.js"></script>
+</body>
+</html>
